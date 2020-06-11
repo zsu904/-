@@ -1,0 +1,24 @@
+n = input('번호')
+s_k = int(input('국어 점수:'))
+s_e = int(input('영어 점수:'))
+s_m = int(input('수학 점수:'))
+s_p = int(input('물리 점수:'))
+
+t = s_k + s_e + s_m + s_p
+a = t/4
+
+if a >= 90:
+    g = 'A'
+elif a >= 80:
+    g = 'B'
+elif a >= 70:
+    g = 'C'
+elif a >= 60:
+    g = 'D'
+else:
+    g = 'F'
+
+print('='*47)
+print('번호  국어  영어  수학  물리  총점  평균  학점')
+print('='*47)
+print(n,'   ',s_k,'  ',s_e,'  ',s_m,'  ',s_p,' ',t,' ',a,' ',g)
